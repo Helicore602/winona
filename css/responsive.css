@@ -30,6 +30,8 @@
 	.menu-bottom-bg {bottom: -120px;}
 	.chef-top-bg {top: -310px;}
 	.chef-bottom-bg {bottom: -310px;}
+	.news .news-top-bg{top: -60px;}
+
 }
 
 
@@ -57,7 +59,7 @@
 	.menu-bottom-bg {bottom: -90px;}
 	.chef-top-bg {top: -231px;}
 	.chef-bottom-bg {bottom: -231px;}
-	.customer-top-bg {top: -45px;}
+	.customer-top-bg {top: -51px;}
 	.customer-bottom-bg {bottom: 0px;}
 	.speciality-img {width: 350px; height: 350px;}
 	.speciality-img .spec-image{width: 350px; height: 350px;}
@@ -77,6 +79,8 @@
 	_______________________________________________________*/
 	.gallery__thumbs img {max-width: 80px;}
 	.gallery__hero img {max-height: 415px;}
+	.news .news-top-bg{top: -52px;}
+
 }
 
 
@@ -165,6 +169,7 @@
 	ul.share {width: 200px;}
 	ul.compare {width: calc(100% - 200px);}
 	ul.compare li {padding: 0px 10px;}
+
 }
 
 
@@ -196,6 +201,12 @@
 	_______________________________________________________*/
 	.crust-title {font-size: 35px;}
 	.filter-part .filter-line li{padding: 16px 25px;}
+
+	.banner-headding{
+		font-size: 100px;
+	}
+	.news .news-top-bg{top: -37px;}
+
 }
 
 
