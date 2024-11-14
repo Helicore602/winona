@@ -621,7 +621,7 @@
                     role="tab"
                     aria-selected="false"
                   >
-                  Signature</a
+                    Signature</a
                   >
                 </li>
                 <li class="text-uppercase fw-bold nav-item" role="presentation">
@@ -1024,13 +1024,32 @@
     </section>
 
     <section class="online-booking ptb">
+    <!-- <section class="order-section ptb"> -->
+
       <div class="container">
         <div class="row">
+          
           <div class="col-xl-8 col-lg-8 col-md-8 col-12 col-sm-12">
             <div class="burger-builder">
               <h2 class="headding-title text-uppercase fw-bold wow fadeInUp">
                 Make Your <span class="inner-title">Own Pizza</span>
               </h2>
+              <div class="slider-container">
+                <input
+                  type="range"
+                  min="1"
+                  max="3"
+                  value="1"
+                  class="range-slider"
+                  id="donenessSlider"
+                />
+
+                <div class="doneness-levels">
+                  <div id="rareLabel" class="active">Medium</div>
+                  <div id="mediumLabel">Large</div>
+                  <div id="wellDoneLabel">Extra Large</div>
+                </div>
+              </div>
 
               <div>
                 <h6 class="menu-title">Cheese</h6>
@@ -1427,6 +1446,42 @@
           ingredient.classList.toggle("selected");
         });
       });
+    </script>
+
+    <script>
+      const slider = document.getElementById("donenessSlider");
+      const rareLabel = document.getElementById("rareLabel");
+      const mediumLabel = document.getElementById("mediumLabel");
+      const wellDoneLabel = document.getElementById("wellDoneLabel");
+
+      function updateSliderBackground(value) {
+        const percentage = ((value - 1) / 2) * 100; // 0% for 'Rare', 50% for 'Medium', 100% for 'Well-Done'
+        slider.style.background = `linear-gradient(to right, #e67e22 ${percentage}%, #ddd ${percentage}%)`;
+      }
+
+      slider.addEventListener("input", () => {
+        const level = slider.value;
+
+        // Reset all labels
+        rareLabel.classList.remove("active");
+        mediumLabel.classList.remove("active");
+        wellDoneLabel.classList.remove("active");
+
+        // Activate label based on slider value
+        if (level === "1") {
+          rareLabel.classList.add("active");
+        } else if (level === "2") {
+          mediumLabel.classList.add("active");
+        } else if (level === "3") {
+          wellDoneLabel.classList.add("active");
+        }
+
+        // Update background of the slider
+        updateSliderBackground(level);
+      });
+
+      // Initialize slider background on load
+      updateSliderBackground(slider.value);
     </script>
 
     <script src="js/jquery.min.js"></script>
