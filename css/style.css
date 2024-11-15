@@ -1036,3 +1036,10 @@ span.footer-close {background: #fd9d3e; padding: 2px 16px;}
   color: #DF6254;
   
 }  
+
+
+
+/* Menu */
+.menu-img .menu-image.drinks{
+  width: auto;
+}
