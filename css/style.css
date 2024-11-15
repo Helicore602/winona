@@ -797,7 +797,7 @@ ul.compare li:first-child{padding-left: 0;}
 ul.compare li a{color: #121619;}
 ul.compare li a:hover{color: #fd9d3e;}
 ul.compare li a i{padding-right: 3px;}
-ul.share{width: 300px;float: left; text-align: right;}
+ul.share{width: auto;float: left; text-align: right;}
 .share-title {font-size: 20px; color: #121619; font-weight: 700;}
 ul.share li{display: inline-block;}
 ul.share li a{color: #adadad; font-size: 14px; padding: 0px 5px;}
@@ -912,8 +912,12 @@ span.footer-close {background: #fd9d3e; padding: 2px 16px;}
 
 .spinner {
   font-size: 2rem;
-  /* transition: transform 0.1s; */
+  /*transition: transform 0.1s;
+  */
 }
+
+
+
 
 .burger-builder h2 {
   margin-bottom: 20px;
@@ -1036,8 +1040,6 @@ span.footer-close {background: #fd9d3e; padding: 2px 16px;}
   color: #DF6254;
   
 }  
-
-
 
 /* Menu */
 .menu-img .menu-image.drinks{
