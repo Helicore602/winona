@@ -817,119 +817,198 @@
             id="data_pizza"
             aria-labelledby="pizza"
           >
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img src="images/Hawaiian.png" alt="menu" class="menu-image"
-                /></a>
+            <div class="col-xl-12 col-lg-12 col-md-12">
+              <div class="special-tab text-center">
+                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                  <li
+                    class="text-uppercase fw-bold nav-item current"
+                    role="presentation"
+                  >
+                    <a
+                      href="#tab-1"
+                      class="nav-link active"
+                      id="all"
+                      data-bs-toggle="tab"
+                      data-bs-target="#data_classic_pizza"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      Classic Pizza</a
+                    >
+                  </li>
+                  <li
+                    class="text-uppercase fw-bold nav-item"
+                    role="presentation"
+                  >
+                    <a
+                      href="#tab-7"
+                      class="nav-link"
+                      id="pizzas"
+                      data-bs-toggle="tab"
+                      data-bs-target="#data_signature_pizza"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      Signature Pizza</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Hawaiian</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/pepperoni.png"
-                    alt="menu"
-                    class="menu-image"
-                /></a>
+              <div class="tab-content">
+                <div
+                  role="tabpanel"
+                  class="row our-menu-panel tab-pane fade in active show"
+                  role="tabpanel"
+                  id="data_classic_pizza"
+                  aria-labelledby="classic_pizza"
+                >
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/Hawaiian.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Hawaiian</a
+                    >
+                    <p class="menu-des">
+                      Tomato sauce, mozzarella, ham, pineapple, balsamic glaze
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/pepperoni.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Pepperoni</a
+                    >
+                    <p class="menu-des">
+                      Tomato sauce, mozzarella,<br />
+                      pepperoni.
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/veggie-delight.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Veggie</a
+                    >
+                    <p class="menu-des">
+                      Tomato sauce, mozzarella, mushrooms, green peppers, green
+                      olives, sundried tomatoes
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/meat-lovers.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Meat Lover's</a
+                    >
+                    <p class="menu-des">
+                      Tomato sauce, mozzarella, Italian sausage, ham, pepperoni
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                </div>
+                <div
+                  role="tabpanel"
+                  class="row our-menu-panel tab-pane fade in show"
+                  role="tabpanel"
+                  id="data_signature_pizza"
+                  aria-labelledby="signature_pizza"
+                >
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/bbq-chicken-pizza.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >BBQ Chicken</a
+                    >
+                    <p class="menu-des">
+                      BBQ sauce, mozzarella, chicken, spinach, onions.
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/five-cheese.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Five Cheese</a
+                    >
+                    <p class="menu-des">
+                      Tomato sauce, mozzarella, parmesan, provolone, gouda,
+                      ricotta
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/menu-1.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Pestorria</a
+                    >
+                    <p class="menu-des">
+                      Pesto sauce, mozarella, Itailian sausage, sundried
+                      tomatoes
+                    </p>
+                    <span class="menu-price"
+                      >M - $15.99, L - $17.99, XL - $23.99</span
+                    >
+                  </div>
+                </div>
               </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Pepperoni</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/veggie-delight.png"
-                    alt="menu"
-                    class="menu-image"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Veggie</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/meat-lovers.png"
-                    alt="menu"
-                    class="menu-image"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Meat Lover's</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img src="images/menu-4.png" alt="menu" class="menu-image"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >BBQ Chicken</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img src="images/menu-1.png" alt="menu" class="menu-image"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Five Cheese</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img src="images/menu-1.png" alt="menu" class="menu-image"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Pestorria</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
             </div>
           </div>
 
@@ -940,177 +1019,298 @@
             id="data_drinks"
             aria-labelledby="drinks"
           >
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/drinks1.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
+            <div class="col-xl-12 col-lg-12 col-md-12">
+              <div class="special-tab text-center">
+                <ul id="tabs" class="nav nav-tabs" role="tablist">
+                  <li
+                    class="text-uppercase fw-bold nav-item current"
+                    role="presentation"
+                  >
+                    <a
+                      href="#tab-1"
+                      class="nav-link active"
+                      id="all"
+                      data-bs-toggle="tab"
+                      data-bs-target="#data_cans"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      Cans</a
+                    >
+                  </li>
+                  <li
+                    class="text-uppercase fw-bold nav-item"
+                    role="presentation"
+                  >
+                    <a
+                      href="#tab-7"
+                      class="nav-link"
+                      id="pizzas"
+                      data-bs-toggle="tab"
+                      data-bs-target="#data_2_liters"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      2 liter</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Coke Zero</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/Diet Coke.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Coke Diet</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20.50</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/Dr pepper.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >Dr pepper
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$15</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/Sprite1.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >sprite
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$10</span>
-            </div>
+              <div class="tab-content">
+                <div
+                  role="tabpanel"
+                  class="row our-menu-panel tab-pane fade in active show"
+                  role="tabpanel"
+                  id="data_cans"
+                  aria-labelledby="cans"
+                >
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/coke-original.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >coke original
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/drinks1.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Coke Zero</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
 
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/Pepsi.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/Pepsi.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >pepsi
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/pepsi-zero.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >pepsi zero
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/canada dry.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >canada dry
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/ice nestea tea.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >nestea </a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$0.99</span>
+                  </div>
+                </div>
+                <div
+                  role="tabpanel"
+                  class="row our-menu-panel tab-pane fade in show"
+                  role="tabpanel"
+                  id="data_2_liters"
+                  aria-labelledby="2_liters"
+                >
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/coke-original-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >coke original 
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/coke-zero-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >Coke Zero</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/pepsi-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >pepsi
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/pepsi-zero-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >pepsi zero
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/canada-dry-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      >canada dry
+                    </a>
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="shop-detail.html"
+                        ><img
+                          src="images/nestea-b.png"
+                          alt="menu"
+                          class="menu-image drinks"
+                          width="auto"
+                      /></a>
+                    </div>
+                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                      > nestea</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$3.99</span>
+                  </div>
+                </div>
               </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >pepsi
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$12</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/Coca cola Original.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >coke original
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$10</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/canada dry.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >canada dry
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$20</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/7Up.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >7up
-              </a>
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$13</span>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-              <div class="menu-img">
-                <a href="shop-detail.html"
-                  ><img
-                    src="images/ice nestea tea.png"
-                    alt="menu"
-                    class="menu-image drinks"
-                    width="auto"
-                /></a>
-              </div>
-              <a href="shop-detail.html" class="menu-title text-uppercase"
-                >ice nestea tea</a
-              >
-              <p class="menu-des">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-              <span class="menu-price">$16</span>
             </div>
           </div>
 
@@ -1212,7 +1412,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-content wow fadeInUp">
+              <div class="tab-content">
                 <div
                   role="tabpanel"
                   class="row our-menu-panel tab-pane fade in active show"
@@ -1222,7 +1422,7 @@
                 >
                   <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
                     <div class="menu-img">
-                      <a href="shop-detail.html"
+                      <a href="chicken-wings-collection.html"
                         ><img
                           src="images/10-w.png"
                           alt="menu"
@@ -1230,7 +1430,7 @@
                       /></a>
                     </div>
                     <a
-                      href="shop-detail.html"
+                      href="chicken-wings-collection.html"
                       class="menu-title text-uppercase"
                     >
                       10 Pieces</a
@@ -1243,14 +1443,16 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
                     <div class="menu-img">
-                      <a href="shop-detail.html"
+                      <a href="chicken-wings-collection.html"
                         ><img
                           src="images/20-w.png"
                           alt="menu"
                           class="menu-image"
                       /></a>
                     </div>
-                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
                       >20 Pieces</a
                     >
                     <p class="menu-des">
@@ -1261,14 +1463,16 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
                     <div class="menu-img">
-                      <a href="shop-detail.html"
+                      <a href="chicken-wings-collection.html"
                         ><img
                           src="images/30-w.png"
                           alt="menu"
                           class="menu-image"
                       /></a>
                     </div>
-                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
                       >30 Pieces</a
                     >
                     <p class="menu-des">
@@ -1279,14 +1483,16 @@
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
                     <div class="menu-img">
-                      <a href="shop-detail.html"
+                      <a href="chicken-wings-collection.html"
                         ><img
                           src="images/40-w.png"
                           alt="menu"
                           class="menu-image"
                       /></a>
                     </div>
-                    <a href="shop-detail.html" class="menu-title text-uppercase"
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
                       >40 Pieces</a
                     >
                     <p class="menu-des">
@@ -1303,81 +1509,87 @@
                   id="data_boneless_wings"
                   aria-labelledby="boneless_wings"
                 >
-                <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-                  <div class="menu-img">
-                    <a href="shop-detail.html"
-                      ><img
-                        src="images/menu-4.png"
-                        alt="menu"
-                        class="menu-image"
-                    /></a>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="chicken-wings-collection.html"
+                        ><img
+                          src="images/10-w.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
+                    >
+                      10 Pieces</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$12.99</span>
                   </div>
-                  <a
-                    href="shop-detail.html"
-                    class="menu-title text-uppercase"
-                  >
-                    10 Pieces</a
-                  >
-                  <p class="menu-des">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <span class="menu-price">$12.99</span>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-                  <div class="menu-img">
-                    <a href="shop-detail.html"
-                      ><img
-                        src="images/menu-1.png"
-                        alt="menu"
-                        class="menu-image"
-                    /></a>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="chicken-wings-collection.html"
+                        ><img
+                          src="images/20-w.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
+                      >20 Pieces</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$24.99</span>
                   </div>
-                  <a href="shop-detail.html" class="menu-title text-uppercase"
-                    >20 Pieces</a
-                  >
-                  <p class="menu-des">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <span class="menu-price">$24.99</span>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-                  <div class="menu-img">
-                    <a href="shop-detail.html"
-                      ><img
-                        src="images/menu-1.png"
-                        alt="menu"
-                        class="menu-image"
-                    /></a>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="chicken-wings-collection.html"
+                        ><img
+                          src="images/30-w.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
+                      >30 Pieces</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$36.99</span>
                   </div>
-                  <a href="shop-detail.html" class="menu-title text-uppercase"
-                    >30 Pieces</a
-                  >
-                  <p class="menu-des">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <span class="menu-price">$36.99</span>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
-                  <div class="menu-img">
-                    <a href="shop-detail.html"
-                      ><img
-                        src="images/menu-1.png"
-                        alt="menu"
-                        class="menu-image"
-                    /></a>
+                  <div class="col-xl-3 col-lg-3 col-md-4 text-center menu-box">
+                    <div class="menu-img">
+                      <a href="chicken-wings-collection.html"
+                        ><img
+                          src="images/40-w.png"
+                          alt="menu"
+                          class="menu-image"
+                      /></a>
+                    </div>
+                    <a
+                      href="chicken-wings-collection.html"
+                      class="menu-title text-uppercase"
+                      >40 Pieces</a
+                    >
+                    <p class="menu-des">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <span class="menu-price">$48.99</span>
                   </div>
-                  <a href="shop-detail.html" class="menu-title text-uppercase"
-                    >40 Pieces</a
-                  >
-                  <p class="menu-des">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <span class="menu-price">$48.99</span>
-                </div>
                 </div>
               </div>
             </div>
@@ -1558,14 +1770,40 @@
 
                 <div class="ingredients">
                   <div class="ingredient" data-name="Mozarella">
-                    🧀 Mozarella
+                    <img
+                      src="./images/Mozarella.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Mozarella</div>
                   </div>
-                  <div class="ingredient" data-name="Parmesan">🧀 Parmesan</div>
+                  <div class="ingredient" data-name="Parmesan">
+                    <img
+                      src="./images/Paramesan.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Parmesan</div>
+                  </div>
                   <div class="ingredient" data-name="Four Cheese">
                     🧀 Four Cheese
                   </div>
-                  <div class="ingredient" data-name="Ricotta">🧀 Ricotta</div>
-                  <div class="ingredient" data-name="Feta">🧀 Feta</div>
+                  <div class="ingredient" data-name="Ricotta">
+                    <img
+                      src="./images/ricotta.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Ricotta</div>
+                  </div>
+                  <div class="ingredient" data-name="Feta">
+                    <img
+                      src="./images/Feta.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Feta</div>
+                  </div>
                 </div>
               </div>
 
@@ -1574,15 +1812,37 @@
 
                 <div class="ingredients">
                   <div class="ingredient" data-name="Pepperoni">
-                    🥩 Pepperoni
+                    <img
+                      src="./images/pepperoni-m.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Pepperoni</div>
                   </div>
                   <div class="ingredient" data-name="Italian Sausage">
-                    🥩 Italian Sausage
+                    <img
+                      src="./images/Italian-m.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Italian Sausage</div>
                   </div>
                   <div class="ingredient" data-name="Diced Ham">
-                    🥩 Diced Ham
+                    <img
+                      src="./images/dice.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Diced Ham</div>
                   </div>
-                  <div class="ingredient" data-name="Chicken">🥩 Chicken</div>
+                  <div class="ingredient" data-name="Chicken">
+                    <img
+                      src="./images/chicken-m.png"
+                      class="ingredient-images me-2"
+                      alt="Mushrooms"
+                    />
+                    <div>Chicken</div>
+                  </div>
                 </div>
               </div>
 
@@ -1604,7 +1864,6 @@
                       class="ingredient-images me-2"
                       alt="olives"
                     />
-                    <!-- 🫒  -->
                     <div>Green Olives</div>
                   </div>
                   <div class="ingredient" data-name="Black Olives">
@@ -1613,29 +1872,72 @@
                       class="ingredient-images me-2"
                       alt="olives"
                     />
-                    <!-- 🫒 -->
                     <div>Black Olives</div>
                   </div>
                   <div class="ingredient" data-name="Hot Peppers">
-                    🌶️ Hot Peppers
+                    <img
+                      src="./images/pepper.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Hot Peppers</div>
                   </div>
                   <div class="ingredient" data-name="Jalapenos">
-                    🌶️ Jalapenos
+                    <img
+                      src="./images/jalapeno.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Jalapenos</div>
                   </div>
                   <div class="ingredient" data-name="Sundried tomatoes">
-                    🍅 Sundried tomatoes
+                    <img
+                      src="./images/tomato.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Sundried tomatoes</div>
                   </div>
                   <div class="ingredient" data-name="Pineapple">
-                    🍍 Pineapple
+                    <img
+                      src="./images/pineapple.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Pineapple</div>
                   </div>
                   <div class="ingredient" data-name="Red Roasted Pepper">
-                    🍒 Red Roasted Pepper
+                    <img
+                      src="./images/red-rosted.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Red Roasted Pepper</div>
                   </div>
                   <div class="ingredient" data-name="Green Pepper">
-                    🌶️ Green Pepper
+                    <img
+                      src="./images/green-chili-pepper.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Green Pepper</div>
                   </div>
-                  <div class="ingredient" data-name="Spinach">🌿 Spinach</div>
-                  <div class="ingredient" data-name="Onions">🧅 Onions</div>
+                  <div class="ingredient" data-name="Spinach">
+                    <img
+                      src="./images/spinach.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Spinach</div>
+                  </div>
+                  <div class="ingredient" data-name="Onions">
+                    <img
+                      src="./images/onion.png"
+                      class="ingredient-images me-2"
+                      alt="olives"
+                    />
+                    <div>Onions</div>
+                  </div>
                 </div>
               </div>
             </div>

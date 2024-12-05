@@ -347,38 +347,78 @@
         <div class="wings-q-box">
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12">
-              <div class="wings-images">
-                <img src="images/20-w.png" alt="menu" class="menu-image" />
+              <div class="wings-images wow fadeInUp animated">
+                <img
+                  src="images/10-wings-Detail.png"
+                  alt="menu"
+                  class="menu-image"
+                />
               </div>
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 q-box-right"
+            >
               <div class="options">
-                <div class="option-wings" onclick="selectOption(this)">
-                  <img src="./images/10-w-select.png" />
-                  <span class="num-piece" >10 Pieces</span> 
+                <div
+                  class="option-wings selected"
+                  onclick="selectOption(this , 14.99)"
+                >
+                  <div>
+                    <label for="five-pieces" class="num-piece">10 Pieces</label>
+                    <span class="price-piece">$14.99</span>
+                  </div>
+                  <div>
+                    <img src="./images/10-w-select.png" alt="select" />
+                  </div>
+                </div>
 
-                  <!-- <input type="radio" name="wings" id="five-pieces" value="10" />
-                  <label for="five-pieces" class="num-piece">10 Pieces</label>
-                  <span class="price-piece">$5.99</span> -->
+                <div class="option-wings" onclick="selectOption(this , 28.99)">
+                  <div>
+                    <label for="ten-pieces" class="num-piece">20 Pieces</label>
+                    <span class="price-piece">$28.99</span>
+                  </div>
+                  <div>
+                    <img src="./images/20-w-select.png" alt="select" />
+                  </div>
                 </div>
-                <div class="option-wings" onclick="selectOption(this)">
-                  <img src="./images/20-w-select.png" />
-                  <span class="num-piece" >20 Pieces</span> 
-                  <!-- <input type="radio" name="wings" id="ten-pieces" value="20" />
-                  <label for="ten-pieces" class="num-piece">20 Pieces</label>
-                  <span>$10.99</span> -->
-                </div>
-                <div class="option-wings" onclick="selectOption(this)">
-                    <input type="radio" name="wings" id="ten-pieces" value="30" />
+                <div class="option-wings" onclick="selectOption(this , 42.99)">
+                  <div>
                     <label for="ten-pieces" class="num-piece">30 Pieces</label>
-                    <span>$10.99</span>
+                    <span class="price-piece">$42.99</span>
                   </div>
-                  <div class="option-wings" onclick="selectOption(this)">
-                    <input type="radio" name="wings" id="ten-pieces" value="40" />
+                  <div>
+                    <img src="./images/20-w-select.png" alt="select" />
+                  </div>
+                </div>
+                <div class="option-wings" onclick="selectOption(this , 56.99)">
+                  <div>
                     <label for="ten-pieces" class="num-piece">40 Pieces</label>
-                    <span>$10.99</span>
+                    <span class="price-piece">$56.99</span>
                   </div>
+                  <div>
+                    <img src="./images/20-w-select.png" alt="select" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="add-wings">
+                <div class="plus">
+                  <i
+                    class="fa fa-minus"
+                    aria-hidden="true"
+                    onclick="addQuantity(-1)"
+                  ></i>
+                  <div class="add-qua mx-3" id="add-qua">1</div>
+                  <i
+                    class="fa fa-plus"
+                    aria-hidden="true"
+                    onclick="addQuantity(1)"
+                  ></i>
+                </div>
+                <div class="final-p">
+                  <h6 class="add-price" id="total-price">$14.99</h6>
+                </div>
               </div>
             </div>
           </div>
@@ -386,10 +426,10 @@
       </div>
     </section>
 
-    <section class="select-wings ">
+    <section class="select-wings">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12">
+          <div class="col-xl-12 col-lg-12 col-md-12 main-tab-col">
             <div class="special-tab text-center wow fadeInUp">
               <ul id="tabs" class="nav nav-tabs" role="tablist">
                 <li
@@ -401,11 +441,11 @@
                     class="nav-link active"
                     id="all"
                     data-bs-toggle="tab"
-                    data-bs-target="#data_all"
+                    data-bs-target="#data_sauces"
                     role="tab"
                     aria-selected="true"
                   >
-                  Sauces</a
+                    Sauces</a
                   >
                 </li>
                 <li class="text-uppercase fw-bold nav-item" role="presentation">
@@ -414,15 +454,263 @@
                     class="nav-link"
                     id="pizzas"
                     data-bs-toggle="tab"
-                    data-bs-target="#data_pizza"
+                    data-bs-target="#data_sides"
                     role="tab"
                     aria-selected="false"
                   >
-                  Sides/Upgrades</a
+                    Sides/Upgrades</a
                   >
                 </li>
-
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-md-8 col-12 col-sm-12">
+            <div class="tab-content wings-tab-content wow fadeInUp">
+              <div
+                role="tabpanel"
+                class="row our-menu-panel tab-pane fade in active show"
+                role="tabpanel"
+                id="data_sauces"
+                aria-labelledby="sauces"
+              >
+                <div class="sauce-selection">
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Mild"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Mild</h4>
+                    </div>
+                    <img src="./images/mild-s.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Medium"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Medium</h4>
+                    </div>
+                    <img src="./images/medium-s.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Hot"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Hot</h4>
+                    </div>
+                    <img src="./images/HS.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Honey Garlic"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Honey Garlic</h4>
+                    </div>
+                    <img src="./images/HG.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Thai Sweet and Spic"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Thai Sweet and Spic</h4>
+                    </div>
+                    <img src="./images/SI.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="BBQ"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">BBQ</h4>
+                    </div>
+                    <img src="./images/BBQ.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Crazy Hot"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Crazy Hot</h4>
+                    </div>
+                    <img src="./images/CH.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Spicy Gar-Par"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Spicy Gar-Par</h4>
+                    </div>
+                    <img src="./images/IM.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Cajun Seasoning"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Cajun Seasoning</h4>
+                    </div>
+                    <img src="./images/CS.png" alt="sauce" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                role="tabpanel"
+                class="row our-menu-panel tab-pane fade in show"
+                role="tabpanel"
+                id="data_sides"
+                aria-labelledby="sides"
+              >
+                <div class="sauce-selection">
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Box of Fries"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Box of Fries</h4>
+                    </div>
+                    <img src="./images/french-fries-in-box.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Garlic Bread"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Garlic Bread</h4>
+                    </div>
+                    <h4 class="varient-price">$1.29</h4>
+                    <img src="./images/mild-s.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Cheesy Garlic Bread"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Cheesy Garlic Bread</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
+                    <img src="./images/HS.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Cheesesticks"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Cheesesticks</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
+
+                    <img src="./images/HG.png" alt="sauce" />
+                  </div>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Poutine"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Poutine</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
+
+                    <img src="./images/SI.png" alt="sauce" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-12 col-sm-12 wings-q-box right-side-selection"
+          >
+            <div class="wings-images wow fadeInUp animated">
+              <img
+                src="images/10-wings-Detail.png"
+                alt="menu"
+                class="menu-image"
+              />
+            </div>
+            <h6 class="main-varient-name">Breaded / No Breaded</h6>
+            <h6 class="selected-varient-name"></h6>
+
+            <div class="options">
+              <div
+                class="option-wings selected"
+                onclick="selectOption(this , 14.99)"
+              >
+                <div>
+                  <label for="five-pieces" class="num-piece">10 Pieces</label>
+                  <span class="price-piece">$14.99</span>
+                </div>
+                <div>
+                  <img src="./images/10-w-select.png" alt="select" />
+                </div>
+              </div>
+
+              <div class="option-wings" onclick="selectOption(this , 28.99)">
+                <div>
+                  <label for="ten-pieces" class="num-piece">20 Pieces</label>
+                  <span class="price-piece">$28.99</span>
+                </div>
+                <div>
+                  <img src="./images/20-w-select.png" alt="select" />
+                </div>
+              </div>
+              <div class="option-wings" onclick="selectOption(this , 42.99)">
+                <div>
+                  <label for="ten-pieces" class="num-piece">30 Pieces</label>
+                  <span class="price-piece">$42.99</span>
+                </div>
+                <div>
+                  <img src="./images/20-w-select.png" alt="select" />
+                </div>
+              </div>
+              <div class="option-wings" onclick="selectOption(this , 56.99)">
+                <div>
+                  <label for="ten-pieces" class="num-piece">40 Pieces</label>
+                  <span class="price-piece">$56.99</span>
+                </div>
+                <div>
+                  <img src="./images/20-w-select.png" alt="select" />
+                </div>
+              </div>
+
+              <div class="add-wings">
+                <div class="plus">
+                  <i
+                    class="fa fa-minus"
+                    aria-hidden="true"
+                    onclick="addQuantity(-1)"
+                  ></i>
+                  <div class="add-qua mx-3" id="add-qua-sec">1</div>
+                  <i
+                    class="fa fa-plus"
+                    aria-hidden="true"
+                    onclick="addQuantity(1)"
+                  ></i>
+                </div>
+                <div class="final-p">
+                  <h6 class="add-price" id="total-price-sec">$14.99</h6>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -540,25 +828,129 @@
     <script src="js/script.js"></script>
 
     <script>
-        function selectOption(element) {
-          document.querySelectorAll('.option-wings').forEach(option => {
-            option.classList.remove('selected');
-          });
-          element.classList.add('selected');
-          // element.querySelector('input').checked = true;
+      let quantity = 1;
+      let selectedPrice = 14.99;
+      let selectedImage = "images/10-wings-Detail.png";
+      let sidesPrice = 0;
+      let selectedSauces = new Set();
+      let selectedSides = new Set();
+
+      window.onload = function () {
+        updateTotalPrice();
+        updateImage();
+      };
+
+      function selectOption(element, price) {
+        document.querySelectorAll(".option-wings").forEach((option) => {
+          option.classList.remove("selected");
+        });
+        element.classList.add("selected");
+        selectedPrice = price;
+
+        const numPiece = element.querySelector(".num-piece").textContent.trim();
+        document.querySelectorAll(".option-wings").forEach((option) => {
+          if (
+            option.querySelector(".num-piece").textContent.trim() === numPiece
+          ) {
+            option.classList.add("selected");
+          }
+        });
+
+        // Update the image based on the selected option
+
+        const selectedPieces = element.querySelector(".num-piece").innerText;
+        updateImage(selectedPieces);
+        updateTotalPrice();
+      }
+
+      function addQuantity(change) {
+        quantity += change;
+        if (quantity < 1) quantity = 1;
+        document.getElementById("add-qua").innerText = quantity;
+        document.getElementById("add-qua-sec").innerText = quantity;
+        updateTotalPrice();
+      }
+
+      function updateTotalPrice() {
+        sidesPrice = Array.from(selectedSides)
+          .map((side) =>
+            parseFloat(
+              document
+                .querySelector(`[data-sauce='${side}'] .varient-price`)
+                .textContent.replace("$", "")
+            )
+          )
+          .reduce((sum, price) => sum + price, 0);
+        const totalPrice = ((selectedPrice + sidesPrice) * quantity).toFixed(2);
+        document.getElementById("total-price").innerText = `$${totalPrice}`;
+        document.getElementById("total-price-sec").innerText = `$${totalPrice}`;
+      }
+
+      // Function to update the image based on the selected pieces
+      function updateImage(pieces) {
+        let imageSrc = "";
+
+        switch (pieces) {
+          case "10 Pieces":
+            imageSrc = "images/10-wings-Detail.png";
+            break;
+          case "20 Pieces":
+            imageSrc = "images/20-wings-Detail.png";
+            break;
+          case "30 Pieces":
+            imageSrc = "images/30-wings-Detail.png";
+            break;
+          case "40 Pieces":
+            imageSrc = "images/40-wings-Detail.png";
+            break;
+          default:
+            imageSrc = "images/10-wings-Detail.png"; // Default image
         }
-      </script>
 
-<script>
-  // function selectOption(element, group) {
-  //   const options = document.querySelectorAll(`.${group} .option`);
-  //   options.forEach(option => option.classList.remove('selected'));
-  //   element.classList.add('selected');
-  // }
+        // Update the images
+        const images = document.querySelectorAll(".wings-images img");
+        images.forEach((img) => {
+          img.src = imageSrc;
+        });
+      }
 
-  function selectSauce(element) {
-    element.classList.toggle('selected');
-  }
-</script>
+      // Function to handle the selection of a side/upgrade variant
+      function toggleVarientSelection(element) {
+        element.classList.toggle("selected");
+
+        const priceText = element.querySelector(".varient-price");
+        const itemName = element
+          .querySelector(".varient-name")
+          .textContent.trim();
+
+        if (priceText) {
+          const price = parseFloat(priceText.textContent.replace("$", ""));
+          if (selectedSides.has(itemName)) {
+            selectedSides.delete(itemName);
+          } else {
+            selectedSides.add(itemName);
+          }
+        } else {
+          if (selectedSauces.has(itemName)) {
+            selectedSauces.delete(itemName);
+          } else {
+            selectedSauces.add(itemName);
+          }
+        }
+        updateSelectedVariants();
+        updateTotalPrice();
+      }
+
+      function updateSelectedVariants() {
+        // Combine selected sauces and sides into one string
+        const selectedItems = [...selectedSauces, ...selectedSides];
+
+        // Display the selected items in the <h6> element
+        document.querySelector(".selected-varient-name").textContent =
+          selectedItems.length > 0
+            ? selectedItems.join(", ")
+            : "";
+      }
+    </script>
   </body>
 </html>

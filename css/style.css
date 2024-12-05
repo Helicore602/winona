@@ -4165,85 +4165,268 @@ span.footer-close {
   width: auto;
 }
 
+/* Wings inner page */
+
+.banner.wings-collection {
+  min-height: 600px;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+}
 .wings-collection .wings-q-box {
-  padding-top: 150px;
   position: relative;
   z-index: 11;
 }
 
-.wings-collection .wings-q-box .options {
-  display: flex;
-  justify-content: space-around;
+.wings-collection .wings-q-box .wings-images {
+  width: 400px;
 }
 
-.wings-collection .wings-q-box .option-wings {
-  /* width: 45%; */
+.wings-q-box .q-box-right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.wings-q-box .add-wings {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.wings-q-box .add-wings .plus {
+  display: flex;
+  align-items: center;
+}
+
+.wings-q-box .add-wings .plus i {
+  color: #fff;
+  cursor: pointer;
+}
+
+.wings-q-box .add-wings .plus .add-qua {
+  color: #fff;
+  font-size: 24px;
+}
+
+.wings-q-box .add-wings .final-p .add-price {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 50px;
+}
+.wings-q-box .options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 20px;
+}
+
+.wings-q-box .option-wings {
+  /*width: 45%;
+  */
   text-align: center;
   padding: 10px;
-  border: 2px solid #ddd;
+  border: 2px solid #333;
   border-radius: 8px;
   cursor: pointer;
   transition: border 0.3s;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  background-color: #333;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  position: relative;
 }
 
-.wings-collection .wings-q-box .option-wings:hover {
+.wings-q-box .option-wings:hover {
   border-color: #ff5500;
+  filter: grayscale(0);
 }
 
-.wings-collection .wings-q-box .option-wings img{
+.wings-q-box .option-wings img {
   width: 50px;
 }
 
-
-.wings-collection .wings-q-box .option-wings input {
+.wings-q-box .option-wings input {
   display: none;
 }
 
-.wings-collection .wings-q-box .option-wings label {
+.wings-q-box .option-wings label {
   display: block;
   font-size: 18px;
   color: #555;
 }
 
-.wings-collection .wings-q-box .option-wings span {
+.wings-q-box .option-wings span {
   display: block;
   font-size: 16px;
   color: #888;
 }
 
-.wings-collection .wings-q-box .option-wings .num-piece{
+.wings-q-box .option-wings .num-piece {
   color: #fff;
 }
 
-.wings-collection .wings-q-box .option-wings.selected {
+.wings-q-box .option-wings.selected {
   border-color: #ff5500;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
+.wings-q-box.right-side-selection {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wings-q-box.right-side-selection .main-varient-name {
+  color: #4c3017;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
-.sauce-group {
+.wings-q-box.right-side-selection .selected-varient-name {
+  color: #4c3017;
+  font-size: 14px;
+  max-width: 260px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* .wings-q-box.right-side-selection .options{
+  justify-content: center;
+} */
+.wings-q-box.right-side-selection .option-wings {
+  min-width: 150px;
+}
+.wings-q-box.right-side-selection .add-wings {
+  margin-top: 0;
+}
+
+.wings-q-box.right-side-selection .add-wings .plus i {
+  color: #1d1d1d;
+}
+
+.wings-q-box.right-side-selection .add-wings .plus .add-qua {
+  color: #1d1d1d;
+}
+.wings-q-box.right-side-selection .add-wings .final-p .add-price {
+  color: #1d1d1d;
+}
+.wings-q-box.right-side-selection .wings-images {
+  width: 250px;
+  min-height: 210px;
+  margin-bottom: 20px;
+}
+.select-wings {
+  padding-bottom: 100px;
+}
+
+.select-wings .special-tab ul {
+  border: 6px solid #fff;
+}
+
+.select-wings .special-tab ul li a {
+  min-width: 400px;
+}
+.select-wings .main-tab-col {
+  transform: translateY(-24px);
+  -webkit-transform: translateY(-24px);
+  -moz-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  -o-transform: translateY(-24px);
+}
+
+.select-wings .wings-tab-content .sauce-selection {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  gap: 20px;
 }
-
-.sauce {
-  padding: 10px 20px;
-  border: 2px solid #ddd;
+.select-wings .wings-tab-content .sauce-selection .variety-sauce {
+  background-color: #eaf0f3;
+  width: 166px;
+  padding: 10px;
+  border: 1px solid #e1e7e9;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
-
-.sauce:hover {
-  background-color: #ff6600;
-  color: white;
+.select-wings .wings-tab-content .sauce-selection .variety-sauce.selected {
   border-color: #ff6600;
 }
 
-.sauce.selected {
+.select-wings
+  .wings-tab-content
+  .sauce-selection
+  .variety-sauce
+  .s-upper-layer {
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+
+.select-wings
+  .wings-tab-content
+  .sauce-selection
+  .variety-sauce
+  .s-upper-layer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
   background-color: #ff6600;
-  color: white;
-  border-color: #ff6600;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+.select-wings
+  .wings-tab-content
+  .sauce-selection
+  .variety-sauce.selected
+  .s-upper-layer::before {
+  transform: translateX(100%);
+}
+
+.select-wings .wings-tab-content .sauce-selection .variety-sauce .varient-name {
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s ease, text-align 0.5s ease;
+  opacity: 1;
+  padding: 3px;
+}
+
+.select-wings
+  .wings-tab-content
+  .sauce-selection
+  .variety-sauce.selected
+  .varient-name {
+  color: #fff;
+  text-align: center;
+}
+
+.select-wings
+  .wings-tab-content
+  .sauce-selection
+  .variety-sauce
+  .varient-price {
+  color: #ff6600;
+  margin-top: 6px;
 }
