@@ -198,6 +198,32 @@ $(function() {
             });
         }
 
+        if ($(".delas-day-carousel").length > 0) {
+            $('.delas-day-carousel').owlCarousel({
+                loop:true,
+                nav: true,
+                dots: false,
+                items: 1,
+                responsiveClass: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause: true,
+                autoHeight:true,
+                responsive: {
+                    0: {
+                        arrow: false,
+                        nav: false,
+                        dots: true,
+                    },
+                    768: {
+                        arrow: false,
+                        nav: true,
+                        dots: false,
+                    },
+                }
+            });
+        }
+
 
         /*---- Home page chef banner -----*/
         if ($(".chef-banner").length > 0) {
