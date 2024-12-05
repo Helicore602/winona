@@ -1560,6 +1560,8 @@ _______________________________________________________*/
   transition: all 400ms ease;
   top: 0;
 }
+
+
 .special-menu .menu-img:hover {
   top: -12px;
 }
@@ -1568,6 +1570,7 @@ _______________________________________________________*/
   height: 200px;
   transition: all 400ms ease;
 }
+
 .menu-title {
   font-size: 18px;
   color: #fff;
@@ -4430,3 +4433,24 @@ span.footer-close {
   color: #ff6600;
   margin-top: 6px;
 }
+
+/* Menu 1 page start */
+.main-menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu-list .menu-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-menu-list .menu-list-box .list-img {
+  width: 200px;
+}
+.main-menu-list .menu-list-box .menu-detail {
+  padding: 20px 0px;
+}
+
+/* Menu 1 page end */
