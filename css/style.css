@@ -1489,6 +1489,42 @@ _______________________________________________________*/
 .order-section .padding-lf {
   padding: 0px 60px;
 }
+/* -------------// home banner inner carousal css start //------------- */
+.banner.home-page {
+  display: flex;
+  align-items: center;
+}
+.delas-day-carousel .banner-inner-slide-1 .all-img-inner-banner img {
+  width: 300px;
+}
+.delas-day-carousel .banner-inner-slide-1 .all-img-inner-banner .order-title {
+  color: #fefefe;
+  text-align: center;
+  font-size: 24px;
+}
+.delas-day-carousel
+  .banner-inner-slide-1
+  .all-img-inner-banner
+  .banner-sub-hed {
+  color: #fefefe;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0px;
+  margin-top: 12px;
+}
+.delas-day-carousel
+  .banner-inner-slide-1
+  .all-img-inner-banner
+  .banner-sub-hed.delas-price {
+  color: #fd9d3e;
+}
+.banner.home-page .owl-item {
+  min-height: fit-content;
+}
+.banner.home-page .banner-box {
+  padding-top: 20px;
+}
+/* -------------// home banner inner carousal css end //------------- */
 
 /* -------------// Our speciality Block css start //------------- */
 .speciality-img {
@@ -1560,7 +1596,6 @@ _______________________________________________________*/
   transition: all 400ms ease;
   top: 0;
 }
-
 
 .special-menu .menu-img:hover {
   top: -12px;
@@ -4454,4 +4489,3 @@ span.footer-close {
 }
 
 /* Menu 1 page end */
-
