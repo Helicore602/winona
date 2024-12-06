@@ -329,7 +329,7 @@
 	.speciality-img .spec-image {width: 200px; height: 200px;}
 	.ser-title {font-size: 20px; padding-top: 15px;}
 	.special-tab .nav-tabs li a{padding: 14px 22px;}
-	.menu-img {width: unset; height: unset;}
+	.menu-img {width: fit-content; height: unset;}
 	.our-menu-panel {padding-top: 0px;}
 	.menu-img .menu-image {width: 100%; height: unset; max-width: 150px;}
 	.online-call{font-size: 25px; padding: 10px 10px 10px 40px; background-size: 25px; width: unset;}
@@ -750,6 +750,14 @@
 
 @media(max-width: 600px){
 	.customer-top-bg {top: -21px;}
+
+	.speciality .special-dish-second{
+		order: 2;
+	}
+
+	.speciality .ser-title , .order-des{
+		text-align: center;
+	}
 }
 
 
