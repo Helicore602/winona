@@ -2256,15 +2256,14 @@
     font-size: 30px;
     margin-bottom: 15px;
   }
-  .banner.home-page .delas-day-carousel .owl-dots{
-	left: 50%;
-	transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-}
-
+  .banner.home-page .delas-day-carousel .owl-dots {
+    left: 50%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 600px) {
@@ -2316,15 +2315,18 @@
   .wings-q-box.right-side-selection {
     padding-top: 60px;
   }
+  .slider-container {
+    width: auto;
+  }
 }
 
 @media (max-width: 480px) {
   /*_______________________________________________________
 	// Home Page  //----------------------------
 	________________________________________________________*/
-	.banner.home-page .delas-day-carousel .owl-item{
-		overflow-y: auto;
-	}
+  .banner.home-page .delas-day-carousel .owl-item {
+    overflow-y: auto;
+  }
   .banner.home-page .banner-box {
     padding-top: 100px;
   }
