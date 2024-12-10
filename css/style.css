@@ -4560,6 +4560,7 @@ span.footer-close {
 }
 .special-menu.all-menu-tabs .menu-des{
   color: #fff;
+  min-height: 54px
 }
 .special-menu.all-menu-tabs .menu-price{
   font-size: 15px;
