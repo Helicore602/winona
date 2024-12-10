@@ -1489,42 +1489,6 @@ _______________________________________________________*/
 .order-section .padding-lf {
   padding: 0px 60px;
 }
-/* -------------// home banner inner carousal css start //------------- */
-.banner.home-page {
-  display: flex;
-  align-items: center;
-}
-.delas-day-carousel .banner-inner-slide-1 .all-img-inner-banner img {
-  width: 300px;
-}
-.delas-day-carousel .banner-inner-slide-1 .all-img-inner-banner .order-title {
-  color: #fefefe;
-  text-align: center;
-  font-size: 24px;
-}
-.delas-day-carousel
-  .banner-inner-slide-1
-  .all-img-inner-banner
-  .banner-sub-hed {
-  color: #fefefe;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 0px;
-  margin-top: 12px;
-}
-.delas-day-carousel
-  .banner-inner-slide-1
-  .all-img-inner-banner
-  .banner-sub-hed.delas-price {
-  color: #fd9d3e;
-}
-.banner.home-page .owl-item {
-  min-height: fit-content;
-}
-.banner.home-page .banner-box {
-  padding-top: 20px;
-}
-/* -------------// home banner inner carousal css end //------------- */
 
 /* -------------// Our speciality Block css start //------------- */
 .speciality-img {
@@ -4034,6 +3998,7 @@ span.footer-close {
   */
 }
 
+/* craft your pizza page */
 .burger-builder h2 {
   margin-bottom: 20px;
   font-size: 56px;
@@ -4202,6 +4167,7 @@ span.footer-close {
 .menu-img .menu-image.drinks {
   width: auto;
 }
+/* craft your pizza end */
 
 /* Wings inner page */
 
@@ -4468,6 +4434,52 @@ span.footer-close {
   color: #ff6600;
   margin-top: 6px;
 }
+
+/* home page banner start */
+.banner.home-page .banner-slide.banner-deals .banner-box{
+  padding-top: 120px;
+}
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images{
+  position: unset;
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  margin-top: 30px;
+}
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner .order-title{
+  color: #fff;
+  font-size: 24px;
+}
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner  .banner-sub-hed{ 
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin: 10px 0px;
+}
+
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner  .banner-sub-hed.delas-price{ 
+  font-size: 18px;
+  color: #fd9d3e;
+}
+
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner .deals-image-box{
+  min-height: 280px;
+}
+
+
+
+.banner.home-page .banner-slide.banner-deals .banner-text{
+  position: unset;
+  transform: translate(0);
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+}
+/* home page banner end */
+
 
 /* Menu 1 page start */
 .main-menu-list {

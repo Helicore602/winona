@@ -2318,20 +2318,56 @@
   .slider-container {
     width: auto;
   }
+  .banner.home-page
+    .banner-slide.banner-deals
+    .banner-box
+    .banner-images
+    .all-img-banner
+    .deals-image-box {
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .banner.home-page
+    .banner-slide.banner-deals
+    .banner-box
+    .banner-images
+    .all-img-banner
+    .deals-image-box
+    img {
+    width: 100px;
+  }
+  .banner.home-page
+    .banner-slide.banner-deals
+    .banner-box
+    .banner-images
+    .all-img-banner
+    .order-title {
+    font-size: 18px;
+  }
+  .banner.home-page
+    .banner-slide.banner-deals
+    .banner-box
+    .banner-images
+    .all-img-banner
+    .banner-sub-hed {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
   /*_______________________________________________________
 	// Home Page  //----------------------------
 	________________________________________________________*/
+  .banner.home-page{
+    padding-bottom: 20px;
+  }
   .banner.home-page .delas-day-carousel .owl-item {
     overflow-y: auto;
   }
   .banner.home-page .banner-box {
     padding-top: 100px;
-  }
-  .banner.home-page {
-    min-height: 490px;
   }
 
   .header-link-dropdown {
