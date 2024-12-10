@@ -4001,7 +4001,6 @@ span.footer-close {
 /* craft your pizza page */
 .burger-builder h2 {
   margin-bottom: 20px;
-  font-size: 56px;
 }
 .burger-builder h2 .inner-title {
   color: #fd9d3e;
@@ -4307,6 +4306,43 @@ span.footer-close {
 .wings-q-box.right-side-selection .add-wings {
   margin-top: 0;
 }
+.wings-q-box.right-side-selection .add-wings .plus .pm-icon {
+  cursor: pointer;
+  border: 1px solid #1d1d1d;
+  padding: 5px 12px;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 1;
+  transition: border-color 0.4s ease;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.wings-q-box.right-side-selection .add-wings .plus .pm-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start completely off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: #ff5500;
+  z-index: -1; /* Place behind the content */
+  transition: left 0.4s ease-in-out;
+}
+.wings-q-box.right-side-selection .add-wings .plus .pm-icon:hover::before {
+  left: 0; /* Slide in the background color */
+}
+
+.wings-q-box.right-side-selection .add-wings .plus .pm-icon:hover {
+  border-color: #ff5500;
+}
+
+.wings-q-box.right-side-selection .add-wings .plus .pm-icon:hover i {
+  color: #fff;
+}
 
 .wings-q-box.right-side-selection .add-wings .plus i {
   color: #1d1d1d;
@@ -4436,10 +4472,10 @@ span.footer-close {
 }
 
 /* home page banner start */
-.banner.home-page .banner-slide.banner-deals .banner-box{
+.banner.home-page .banner-slide.banner-deals .banner-box {
   padding-top: 120px;
 }
-.banner.home-page .banner-slide.banner-deals .banner-box .banner-images{
+.banner.home-page .banner-slide.banner-deals .banner-box .banner-images {
   position: unset;
   transform: translate(0);
   -webkit-transform: translate(0);
@@ -4448,29 +4484,47 @@ span.footer-close {
   -o-transform: translate(0);
   margin-top: 30px;
 }
-.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner .order-title{
+.banner.home-page
+  .banner-slide.banner-deals
+  .banner-box
+  .banner-images
+  .all-img-banner
+  .order-title {
   color: #fff;
   font-size: 24px;
 }
-.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner  .banner-sub-hed{ 
+.banner.home-page
+  .banner-slide.banner-deals
+  .banner-box
+  .banner-images
+  .all-img-banner
+  .banner-sub-hed {
   color: #fff;
   font-size: 16px;
   letter-spacing: 0;
   margin: 10px 0px;
 }
 
-.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner  .banner-sub-hed.delas-price{ 
+.banner.home-page
+  .banner-slide.banner-deals
+  .banner-box
+  .banner-images
+  .all-img-banner
+  .banner-sub-hed.delas-price {
   font-size: 18px;
   color: #fd9d3e;
 }
 
-.banner.home-page .banner-slide.banner-deals .banner-box .banner-images .all-img-banner .deals-image-box{
+.banner.home-page
+  .banner-slide.banner-deals
+  .banner-box
+  .banner-images
+  .all-img-banner
+  .deals-image-box {
   min-height: 280px;
 }
 
-
-
-.banner.home-page .banner-slide.banner-deals .banner-text{
+.banner.home-page .banner-slide.banner-deals .banner-text {
   position: unset;
   transform: translate(0);
   -webkit-transform: translate(0);
@@ -4479,7 +4533,6 @@ span.footer-close {
   -o-transform: translate(0);
 }
 /* home page banner end */
-
 
 /* Menu 1 page start */
 .main-menu-list {

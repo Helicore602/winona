@@ -202,7 +202,9 @@
                             <div class="col-xl-3 col-lg-3 col-md-3">
                               <ul>
                                 <li>
-                                  <a href="./images/menu.pdf" target="_blank">Download Our Menu</a>
+                                  <a href="./images/menu.pdf" target="_blank"
+                                    >Download Our Menu</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -322,7 +324,12 @@
                   </div>
                 </li> -->
                 <li class="order-online">
-                  <a href="./images/menu.pdf" target="_blank" class="btn btn-green">Download Menu</a>
+                  <a
+                    href="./images/menu.pdf"
+                    target="_blank"
+                    class="btn btn-green"
+                    >Download Menu</a
+                  >
                 </li>
                 <li class="side-toggle">
                   <button
@@ -403,17 +410,14 @@
 
               <div class="add-wings">
                 <div class="plus">
-                  <i
-                    class="fa fa-minus"
-                    aria-hidden="true"
-                    onclick="addQuantity(-1)"
-                  ></i>
+                  <div class="pm-icon" onclick="addQuantity(-1)">  
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </div>
+
                   <div class="add-qua mx-3" id="add-qua">1</div>
-                  <i
-                    class="fa fa-plus"
-                    aria-hidden="true"
-                    onclick="addQuantity(1)"
-                  ></i>
+                  <div class="pm-icon" onclick="addQuantity(-1)">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
                 </div>
                 <div class="final-p">
                   <h6 class="add-price" id="total-price">$14.99</h6>
@@ -576,64 +580,68 @@
                 id="data_sides"
                 aria-labelledby="sides"
               >
-              <div class="sauce-selection">
-                <div
-                  class="variety-sauce"
-                  onclick="toggleVarientSelection(this)"
-                  data-sauce="Box of Fries"
-                >
-                  <div class="s-upper-layer">
-                    <h4 class="varient-name">Box of Fries</h4>
+                <div class="sauce-selection">
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Box of Fries"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Box of Fries</h4>
+                    </div>
+                    <img
+                      src="./images/french-fries-in-box.png "
+                      class="mt-3"
+                      alt="sauce"
+                    />
                   </div>
-                  <img src="./images/french-fries-in-box.png " class="mt-3" alt="sauce" />
-                </div>
-                <div
-                  class="variety-sauce"
-                  onclick="toggleVarientSelection(this)"
-                  data-sauce="Garlic Bread"
-                >
-                  <div class="s-upper-layer">
-                    <h4 class="varient-name">Garlic Bread</h4>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Garlic Bread"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Garlic Bread</h4>
+                    </div>
+                    <h4 class="varient-price">$1.29</h4>
+                    <img src="./images/garlic-bread.png" alt="sauce" />
                   </div>
-                  <h4 class="varient-price">$1.29</h4>
-                  <img src="./images/garlic-bread.png" alt="sauce" />
-                </div>
-                <div
-                  class="variety-sauce"
-                  onclick="toggleVarientSelection(this)"
-                  data-sauce="Cheesy Garlic Bread"
-                >
-                  <div class="s-upper-layer">
-                    <h4 class="varient-name">Cheesy Garlic Bread</h4>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Cheesy Garlic Bread"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Cheesy Garlic Bread</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
+                    <img src="./images/cheese-garlic-bread.png" alt="sauce" />
                   </div>
-                  <h4 class="varient-price">$3.99</h4>
-                  <img src="./images/cheese-garlic-bread.png" alt="sauce" />
-                </div>
-                <div
-                  class="variety-sauce"
-                  onclick="toggleVarientSelection(this)"
-                  data-sauce="Cheesesticks"
-                >
-                  <div class="s-upper-layer">
-                    <h4 class="varient-name">Cheesesticks</h4>
-                  </div>
-                  <h4 class="varient-price">$3.99</h4>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Cheesesticks"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Cheesesticks</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
 
-                  <img src="./images/mozarella-sticks.png" alt="sauce" />
-                </div>
-                <div
-                  class="variety-sauce"
-                  onclick="toggleVarientSelection(this)"
-                  data-sauce="Poutine"
-                >
-                  <div class="s-upper-layer">
-                    <h4 class="varient-name">Poutine</h4>
+                    <img src="./images/mozarella-sticks.png" alt="sauce" />
                   </div>
-                  <h4 class="varient-price">$3.99</h4>
+                  <div
+                    class="variety-sauce"
+                    onclick="toggleVarientSelection(this)"
+                    data-sauce="Poutine"
+                  >
+                    <div class="s-upper-layer">
+                      <h4 class="varient-name">Poutine</h4>
+                    </div>
+                    <h4 class="varient-price">$3.99</h4>
 
-                  <img src="./images/Poutine.png" alt="sauce" />
+                    <img src="./images/Poutine.png" alt="sauce" />
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -946,9 +954,7 @@
 
         // Display the selected items in the <h6> element
         document.querySelector(".selected-varient-name").textContent =
-          selectedItems.length > 0
-            ? selectedItems.join(", ")
-            : "";
+          selectedItems.length > 0 ? selectedItems.join(", ") : "";
       }
     </script>
   </body>
