@@ -111,12 +111,12 @@ img {
 }
 
 /* -------------// Common Style //------------- */
-/* .container {
+.container {
   max-width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
+}
 .container:after {
   content: "";
   display: table;
@@ -4535,6 +4535,9 @@ span.footer-close {
 /* home page banner end */
 
 /* Menu 1 page start */
+.menu-top-bg.menu1-page {
+  top : -50px;
+}  
 .main-menu-list {
   display: flex;
   justify-content: center;
@@ -4552,5 +4555,13 @@ span.footer-close {
 .main-menu-list .menu-list-box .menu-detail {
   padding: 20px 0px;
 }
-
+.special-menu.all-menu-tabs .menu-title{
+  font-weight: 600;
+}
+.special-menu.all-menu-tabs .menu-des{
+  color: #fff;
+}
+.special-menu.all-menu-tabs .menu-price{
+  font-size: 15px;
+}
 /* Menu 1 page end */
