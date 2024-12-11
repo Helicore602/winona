@@ -1,4 +1,7 @@
-@media(min-width : 1900px){
+@media (min-width: 1900px) {
+  /* .banner.home-page {
+    min-height: 900px;
+  } */
   .banner-headding{
     font-size: 80px;
   }
@@ -62,6 +65,9 @@
   /*_______________________________________________________
 	// Home Page //----------------------------
 	________________________________________________________*/
+  .banner-headding{
+    font-size: 90px;
+  }
   .menu-bottom-bg {
     bottom: -110px;
   }
@@ -81,6 +87,9 @@
   /*_______________________________________________________
 	// Home Page //----------------------------
 	________________________________________________________*/
+  .banner-headding{
+    font-size: 120px;
+  }
   .container {
     max-width: 1140px;
   }
@@ -165,8 +174,8 @@
   }
 }
 
-@media (max-width: 1300px) { 
-  .banner-headding{
+@media (max-width: 1400px) {
+  .banner-headding {
     font-size: 80px;
   }
 }
@@ -2371,7 +2380,7 @@
   /*_______________________________________________________
 	// Home Page  //----------------------------
 	________________________________________________________*/
-  .banner.home-page{
+  .banner.home-page {
     padding-bottom: 20px;
   }
   .banner.home-page .delas-day-carousel .owl-item {
@@ -2381,7 +2390,7 @@
     padding-top: 100px;
   }
 
-  .header-link-dropdown { 
+  .header-link-dropdown {
     right: -110px;
   }
   .header-right-link > ul > li {

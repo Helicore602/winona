@@ -4471,6 +4471,23 @@ span.footer-close {
   margin-top: 6px;
 }
 
+/* header start */
+.megamenu-big .megamenu-inner-top .menu-list-d ul li a.btn-green{
+  color: #fff  !important;
+} 
+
+/* header end */
+
+/* footer start */
+.useful-links .copyright ul{
+  text-align: left;
+  padding-top: 0;
+}
+.useful-links .copyright ul li:first-child{
+  padding-left: 0px;
+}
+/* footer end */
+
 /* home page banner start */
 .banner.home-page .banner-slide.banner-deals .banner-box {
   padding-top: 120px;
